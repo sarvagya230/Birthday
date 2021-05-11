@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <h1 class="text" >My Birthday Is Coming!</h1>
+  <div class="clock">
+    <div class="wrapper rotate-1">
+      <div class="inner-1"></div>
+    </div>
+    <div class="wrapper rotate-2">
+      <div class="inner-2"></div>
+    </div>
+  </div>
+    <div class="container">
+        <h1 id="headline">Time Left</h1>
+
+        <div id="countdown">
+          <ul>
+            <li><span id="days" style="text-align: center;"></span>Days</li>
+            <li><span id="hours" style="text-align: center;"></span>Hours</li>
+            <li><span id="minutes" style="text-align: center;"></span>Minutes</li>
+            <li><span id="seconds" style="text-align: center;"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+      
+      <img src="./Countdown-Timer.svg" class="d">
+      <canvas id="canvas" width="400" height="400"
+      >
+      </canvas>
+</body>
+<script src="./index.js"></script>
+</html>

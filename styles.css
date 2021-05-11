@@ -1,0 +1,71 @@
+
+.container{
+    width: 45vw;
+    height: 30vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    
+    border-radius: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(50%);
+    background-size: 400% 400%;
+    animation: forwards 1s ease pop,gradient 15s ease infinite;
+ 
+
+
+}
+#canvas{
+    margin-left: 25vw;
+    background-color: transparent;
+}
+#headline{
+    text-align: center;
+    color: #fff;
+    padding-top: 2vh;
+    font-family: 'Dancing Script', cursive;
+   
+}
+
+.d{
+    width: 30vw;
+    
+}
+.text{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color:#f14761;
+}
+#countdown{
+    display: flex;
+    justify-content: space-around;
+
+}
+ li span{display: block;
+  font-size: 1.5rem;
+ }
+ li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+  @keyframes pop{
+      0%{opacity: 0;transform: translateY(55%)}
+      100%{opacity: 1;transform: translateY(50%)}
+  }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
